@@ -4,7 +4,7 @@ const internalIp = require('internal-ip');
 var exec = require('child_process').exec;
 
 function shutdown(callback) {
-  exec('sudo /sbin/shutdown -r now', function (msg) { console.log(msg) });
+  exec('sudo /sbin/shutdown now', function (msg) { console.log(msg) });
 }
 
 //require('child_process').exec('sudo /sbin/shutdown -r now', function (msg) { console.log(msg) });
