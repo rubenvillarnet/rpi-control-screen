@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
   res.render('index', data);
 });
 
-router.put("/shutdown", (req, res, next) => {
+router.post("/shutdown", (req, res, next) => {
   shutdown(function (output) {
     console.log(output);
   });
