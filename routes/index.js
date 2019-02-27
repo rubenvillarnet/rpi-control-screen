@@ -19,6 +19,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.post("/shutdown", (req, res, next) => {
+  console.log("shutdown has been pushed")
   shutdown(function (output) {
     console.log(output);
   });
